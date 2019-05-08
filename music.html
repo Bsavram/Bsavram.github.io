@@ -1,0 +1,266 @@
+<!-- My Favorite Things: Music by Bianca Avram --> 
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ <style>
+body {
+    background-color: #ecb3ff;
+}
+
+h1 {
+    color: #000066;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+a:link {
+	 background-color:#ffccff;
+	 color:#33001a;
+	  }
+	  
+	a:visited {
+	 background-color:#ccddff;
+	 color:#001a4d;
+	  } 
+</style>
+
+</head>
+
+<style>
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+     <link rel="stylesheet" type="tex/css" href="css\css1.css">
+	<title> Bianca's Favoirte Things </title>
+	
+	
+</head>
+<ul class="topnav" id="myTopnav">
+  <li><a href="site.html">Home</a></li>
+  <li><a href="shows.html"> Shows</a></li>
+   <li><a href="games.html">Games</a></li>
+  <li><a href="traveling.html"> Traveling</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+	<title> Music </title>
+	
+<head>
+
+<body style="text-align:center">
+
+<h1 id="top"> Music </h1>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<body>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Images\bts2.jpg" style="width:100%">
+  <div class="text">Bangtan Boys</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Images\fob.jpg" style="width:100%">
+  <div class="text">Fall Out Boy</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Images\imagined.jpg" style="width:100%">
+  <div class="text">Imagine Dragons</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+<br><br>
+<h2>Why to love music...</h2>
+<blockquote> Music makes the world go round. It gives all kind of emotions and is <i>#relatable</i> usualy. Listen when your bored, during class, during a jog, during a carride, really anytime. And dont forget during public transportation. But, music lets you just be in tune with yourself in the sense that, when having headphones or listening alone you feel at ease and you can go to your peacefull place without the distractions of the world around. <blockquote>
+
+<br>
+
+<blockquote> I listen to anything really, depending on who im with, where I am or what im in the mood for. But theres a ton of things to choose from ranging from pop, hip-hop, trap, electronic, and so on. Even other languages because you dont allows have to understand a song to get the emotions from it. </blockquote> 
+	
+	
+	
+<a href="#top"><h6>top</h6></a>
+
+<div style="background-color:#99e6ff; color:#800080; padding:20px; margin:20px 100px 20px 100px;"> 
+	&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp 
+	<a href="site.html"> Home </a> &nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp 
+	<a href="shows.html"> Shows </a> &nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp 
+	<a href="games.html"> Games </a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+	<a href="traveling.html"> Traveling </a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp </div>
+</body>
+</html> 
