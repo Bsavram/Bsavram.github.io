@@ -1,46 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
-    <title> Nick's Cyber Home </title>
-    <meta name="author" content="Nick Briz">
-    <meta name="description" content="A cool web page for all of my things.">
+<head>
+    <style>
+body {
+    background-color: #ecb3ff;
+}
 
-    <!-- by default your website (depending on the browser) might only be capable
-    of displaying ASCII characters (which you might recall leave out lots of
-    symbols you might want to use like ñ or ♥), this expands the list of
-    available characters to the rest of Unicode -->
-    <meta charset="utf-8"/>
+h1 {
+    color:#000066;
+    text-align: center;
+}
 
-    <!-- this line makes sure your website doesn't look all tiny on mobile
-    browsers. granted that's oversimplifying it a bit, so if you want to learn
-    more visit: https://paulund.co.uk/understanding-the-viewport-meta-tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+a:link {
+	 background-color:#ffccff;
+	 color:#33001a;
+	  }
 
-    <!-- this is a link to your "favicon", this is the little icon that appears
-    in the browser tab (and sometimes in other places like bookmarks).
-    I'm using a gif in this template but it could also be an a
-    classic .ico (type="image/x-icon") or .png (type="image/png") -->
-    <link rel="icon" type="image/gif" href="favicon.gif" />
+	a:visited {
+	 background-color:#ccddff;
+	 color:#001a4d;
+	  }
+</style>
+</head>
 
-    <!-- these are "open graph" meta tags, these are used by social media and
-    other web sites to create those "cards" and other dynamic content when folks
-    share or post a link to your page on there.
-    read more about them here: http://ogp.me/ -->
-    <meta property="og:title" content="Nick Briz"/>
-    <meta property="og:description" content="A cool web page for all of my things"/>
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://website.com/"/>
-    <meta property="og:image" content="https://website.com/images/yourpic.jpg"/>
+<style>
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-    <!-- lastly, these lines connect your CSS files with this HTML page -->
-    <link rel="stylesheet" href="css/styles.css">
+ul.topnav li {float: left;}
 
-  </head>
-  <body>
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
 
-    <h1> Welcome! </h1>
-    <p>My name's Nick, this is my homepage!</p>
+ul.topnav li a:hover {background-color: #555;}
 
-  </body>
-</html>
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+<head>
+     <link rel="stylesheet" type="tex/css" href="css\css1.css">
+	<title> Bianca's Favoirte Things </title>
+
+
+</head>
+
+<ul class="topnav" id="myTopnav">
+  <li><a href="music.html">Music</a></li>
+  <li><a href="shows.html"> Shows</a></li>
+  <li><a href="games.html">Games</a></li>
+  <li><a href="traveling.html"> Traveling</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</head>
+
+<body style="text-align:center">
+
+<h1 id="top"> A Few of My Favorite Things </h1>
+
+	<br><br>
+	<hr width = "75%"> <br><br>
+	<blockquote></blockquote>
+	<table border=5px cellspacing=10px cellpadding=15px width="50%" align="center">
+		<tr>
+			<th> Music </td>
+			<th> Shows </td>
+			<th> Games </th>
+			<th> Traveling </th>
+		</tr>
+		<tr>
+			<td><a href="https://www.youtube.com/watch?v=hmE9f-TEutc" target="_blank">   <img alt="bands" src="Images\bts3.jpg"> </td>
+			<td><a href="https://www.netflix.com" target="_blank"> <img alt="TV" src="Images\tv1.jpg"> </td>
+			<td><a href="https://www.codingame.com/start" target="_blank"> <img alt="Games" src="Images\control.jpg"> </td>
+			<td> <a href="http://www.360cities.net/" target="_blank"><img alt="Traveling" src="Images\landscape.jpg"> </td>
+		</tr>
+
+	</table>
+
+
+<a href="#top"><h6>top</h6></a>
+
+</body>
+</html> 
