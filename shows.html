@@ -1,0 +1,207 @@
+<!-- My Favorite Things: Shows by Bianca Avram --> 
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+body {
+    background-color: #ecb3ff;
+}
+
+h1 {
+    color: #000066;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+	text-align: center;
+}
+
+a:link {
+	 background-color:#ffccff;
+	 color:#33001a;
+	  }
+	  
+	a:visited {
+	 background-color:#ccddff;
+	 color:#001a4d;
+	  } 
+
+</style>
+
+
+ 
+<style>
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #1a000d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+ 
+	
+	<title> Bianca's Favoirte Things </title>
+	
+</head>
+
+<ul class="topnav" id="myTopnav">
+  <li><a href="site.html">Home</a></li>
+  <li><a href="music.html">Music</a></li>
+  <li><a href="games.html">Games</a></li>
+  <li><a href="traveling.html"> Traveling</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+	<title> Shows </title>
+	
+<head>
+
+<body style="text-align:center";>
+
+<h1 id="top"> Shows </h1>
+
+<!-- Slide Show -->
+<section>
+<div style="text-align:center;">
+  <div style="text-align:center> </div> <img class ="mySlides" src="Images\animec.jpg" height="450px" align="center">
+  <img class="mySlides" src="images\animec.jpg" width="50%" align="center">
+  <img class="mySlides" src="Images\wdrama.jpg" width="50%" align="center">
+  <img class="mySlides" src="images\arrow.jpg" width="50%" align="center">
+  <img class="mySlides" src="images\aristo.jpg" width="50%" align="center">
+  <img class="mySlides" src="images\show.jpg" width="50%" align="center">
+
+  
+
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+	<br><br>
+<!-- contains the content of the site --> 
+    <h1 id="top"> Some Types of Shows </h1> <!-- id makes a target on the page --> 
+	<h2>My love for <a href="#anime">anime</a> and <a href="#series">series</a></h2>
+	<!-- the # will take you to a target -->
+    <br><br>
+	<hr width = "75%" align="center"> <br><br>
+	<h2><a name="anime">Anime</a></h2>
+	<blockquote> One way to waste your whole day away is to watch some good ol'anime. Theres such a wide 
+	variety to watch and choose from. Plus most of the episodes are about 20 minutes so you can watch a ton in just one day. And while watching you can do other things in the meantime. </blockquote>
+	<br>
+	<ul> Some include
+			<li> Action  </li>
+	        <li> Adventure </li>
+			<li> Horror  </li>
+			<ul><i> Basically any movie genre</i>
+		</ul>
+		<br>
+		
+			<li>They can also consist of length</i>
+			<ul>
+		<li>Long <i>50-100 plus episodes</i></li>
+		<li>Short <i>25 under episodes</i> </li>
+			
+			</ul>
+		</ul>
+
+	
+	<a href="#top"><h6>top</h6></a>
+	
+	<br><br>
+	<hr width = "75%"> <br><br>
+	<h2><a name="series">Series</a></h2>
+	<blockquote> Things like dramas and shows of that sort are all very amusing to watch. Overall, it brings me joy to watch these shows because it lets you experience and see things from the comfort of your home <i> aka. your bed and couch </i> Some shows even have <a href="games.html">games</a> made from them. </blockquote>
+	<br>
+	
+
+		
+		
+	    
+	
+	
+	
+<a href="#top"><h6>top</h6></a>
+
+<div style="background-color:#99e6ff; color:#800080; padding:20px; margin:20px 100px 20px 100px;"> 
+	&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp 
+	<a href="site.html"> Home </a> &nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp 
+	<a href="music.html"> Music </a> &nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp 
+	<a href="games.html"> Games </a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+	<a href="traveling.html"> Traveling </a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp </div>
+
+</body>
+</html> 
